@@ -21,10 +21,9 @@ def Obtain(fdf_file):
             Species[symbol] = {"Number": int(number), "Z": int(Z)}
     return Species
 
-def psml_find(fdf_file):
+def psml_find(fdf_file,dir):
     
-    dir = os.getcwd()
-    file_path = os.path.join(dir,fdf_file)
+    file_path = os.path.join(os.getcwd(), fdf_file)
     elements = []
 
     in_block = False
