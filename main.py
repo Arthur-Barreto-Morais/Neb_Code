@@ -68,7 +68,7 @@ Images.append(xsf_final)
 
 neb_file = NEB(Images, k = 0.10, climb = False, method = 'improvedtangent', remove_rotation_and_translation= True)
 
-neb_file.interpolate(mic = True, interpolate_cell = False, method = 'idpp')
+neb_file.interpolate(mic = True)
 
 #Obtaining the Chemical Species
 Species = chemical.Obtain(fdf_file)
