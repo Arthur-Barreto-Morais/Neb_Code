@@ -71,7 +71,7 @@ neb_file = NEB(Images, k = 0.10, climb = False, method = 'improvedtangent', remo
 neb_file.interpolate(mic = True, interpolate_cell = False, method = 'idpp')
 
 #Obtaining the Chemical Species
-Species = chemical.chemical_Obtain(fdf_file)
+Species = chemical.Obtain(fdf_file)
 
 dir_neb = 'neb'
 
