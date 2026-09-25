@@ -6,19 +6,19 @@ def Obtain(fdf_file):
     with open(fdf_file, 'r') as f:
             in_block = False
 
-    for line in f:
-        line = line.strip()
-
-        if line == "%block ChemicalSpeciesLabel":
-            in_block = True
-            continue
-
-        if line == "%endblock ChemicalSpeciesLabel":
-            break
-
-        if in_block:
-            number, Z, symbol = line.split()
-            Species[symbol] = {"Number": int(number), "Z": int(Z)}
+        for line in f:
+            line = line.strip()
+    
+            if line == "%block ChemicalSpeciesLabel":
+                in_block = True
+                continue
+    
+            if line == "%endblock ChemicalSpeciesLabel":
+                break
+    
+            if in_block:
+                number, Z, symbol = line.split()
+                Species[symbol] = {"Number": int(number), "Z": int(Z)}
     return Species
 
 def psml_find(fdf_file,dir):
