@@ -350,3 +350,4 @@ CI_opt.run(
 )
 
 write('CI_neb_final.traj', CI_Images)
+
