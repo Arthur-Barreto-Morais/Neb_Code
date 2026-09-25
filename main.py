@@ -11,7 +11,7 @@
 #4. Rodar o SIESTA para cada imagem.
 #5. Ler os arquivos de saída do SIESTA (Total Energy e Forces).
 #6. Rodar o NEB com os dados obtidos.
-#7. 
+#7. Pensar
 #---------------------------------------------------------------------------#
 
 ##################
